@@ -1,0 +1,60 @@
+.container{
+    max-width: 1352px;
+    margin: 0 auto;
+    display: flex;
+}
+
+header{
+    border: 2px solid red;
+    width: 100%;
+}
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    color: #08A6E4;
+    width: 142px;
+    height: 37px;
+    display: inline-block;
+    justify-content: flex-start;
+    /*padding-right: 300px;*/
+}
+
+nav{
+    display: flex;
+    list-style: none;
+    position: relative;
+    left: 400px;
+}
+ul{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3.28px;
+    color: #A5A5A5;
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+li{
+padding-right: 95px;
+}
+a:hover{
+    color: black;
+}
+a:active{
+    border-bottom:3px solid #08A6E4;
+}
+a{
+    display: inline-block;
+    color: #A5A5A5;
+    text-decoration: none;
+    padding: 30px;
+}
+section{
+    border: 1px solid red;
+    text-align: center;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 49px;
+}
