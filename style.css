@@ -5,7 +5,7 @@
 }
 
 header{
-    border: 2px solid red;
+    border: 2px solid #00000029;
     width: 100%;
 }
 .logo{
@@ -50,11 +50,76 @@ a{
     text-decoration: none;
     padding: 30px;
 }
-section{
-    border: 1px solid red;
+.open-section{
+    background: transparent url(../bestshop/images/Background@2x.png) no-repeat padding-box;
+    border: 1px solid #00000029;
     text-align: center;
+    height: 1000px;
+    background-size: 2200px;
+    background-position: bottom;
 }
 h1{
-    font-family: 'Raleway', sans-serif;
-    font-size: 49px;
+    display: inline-block;
+    /*font-family: 'Raleway', sans-serif;*/
+    font: normal normal normal 49px/57px Raleway;
+    /*font-size: 49px;*/
+    padding-top: 60px;
+    width: 226px;
+    height: 57px;
+    margin-bottom: 0;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+.open{
+    font: normal normal bold 16px/22px Open Sans;
+    background: #08A6E4;
+    color: white;
+    width: 440px;
+    height: 67px;
+    border-radius: 40px 40px 40px 40px;
+    border: none;
+    margin-top: 38px;
+}
+h2{
+    text-align: center;
+    font: normal normal normal 36px/42px Raleway;
+}
+.first{
+    display: inline-block;
+    border: 1px solid blue;
+    width: 150px;
+    height: 189px;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.circles1{
+    width: 63px;
+    height: 63px;
+    background-color: #FB3B64;
+    border-radius: 50%;
+}
+
+.circles2{
+    width: 63px;
+    height: 63px;
+    background-color: #08A6E4;
+    border-radius: 50%;
+}
+
+.circles3{
+    width: 63px;
+    height: 63px;
+    background-color: #55DFB4;
+    border-radius: 50%;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+.trzeci{
+    border: 2px solid #00000029;
 }
