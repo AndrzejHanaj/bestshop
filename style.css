@@ -1,9 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 .container{
     max-width: 1352px;
     margin: 0 auto;
-    display: flex;
 }
-
+.d-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.white-background{
+    background: #ffff;
+}
+/*header */
 header{
     border: 2px solid #00000029;
     width: 100%;
@@ -12,20 +22,15 @@ header{
     font-family: 'Raleway', sans-serif;
     font-size: 32px;
     color: #08A6E4;
-    width: 142px;
-    height: 37px;
-    display: inline-block;
-    justify-content: flex-start;
-    /*padding-right: 300px;*/
+    padding: 40px;
 }
-
 nav{
     display: flex;
     list-style: none;
     position: relative;
     left: 400px;
 }
-ul{
+.start{
     font-family: 'Open Sans', sans-serif;
     font-size: 11px;
     letter-spacing: 3.28px;
@@ -50,13 +55,18 @@ a{
     text-decoration: none;
     padding: 30px;
 }
+/*open section*/
+.sell-more {
+    margin-bottom: 100px;
+}
 .open-section{
-    background: transparent url(../bestshop/images/Background@2x.png) no-repeat padding-box;
+    background-image: url(../bestshop/images/Background@2x.png);
+    background-position:center 350px;
+    background-repeat: no-repeat;
     border: 1px solid #00000029;
     text-align: center;
     height: 1000px;
     background-size: 2200px;
-    background-position: bottom;
 }
 h1{
     display: inline-block;
@@ -83,43 +93,134 @@ p{
     border: none;
     margin-top: 38px;
 }
+
+/*sells section*/
+.sells-section {
+    height: 531px;
+}
 h2{
     text-align: center;
     font: normal normal normal 36px/42px Raleway;
 }
 .first{
-    display: inline-block;
-    border: 1px solid blue;
-    width: 150px;
+    width: 163px;
     height: 189px;
-    justify-content: space-between;
     margin-top: 100px;
     margin-bottom: 100px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
-.circles1{
+.sells-section>.container>h2{
+    margin-top: 50px;
+}
+.circles{
     width: 63px;
     height: 63px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.circles>img{
+    margin-left: 30px;
+}
+.circle1{
     background-color: #FB3B64;
-    border-radius: 50%;
 }
 
-.circles2{
-    width: 63px;
-    height: 63px;
+.circle2{
     background-color: #08A6E4;
-    border-radius: 50%;
 }
 
-.circles3{
-    width: 63px;
-    height: 63px;
+.circle3{
     background-color: #55DFB4;
-    border-radius: 50%;
 }
-main{
-    display: flex;
-    justify-content: space-evenly;
+.number{
+    font-weight: bolder;
+    letter-spacing: 5.96px;
+    font-size: 24px;
 }
+.first>p{
+    font-family: 'Raleway', sans-serif;
+}
+
+.first>p:nth-child(3){
+    color: #A5A5A5;
+}
+/*4rd section*/
 .trzeci{
     border: 2px solid #00000029;
+}
+.benefity{
+    width: 100%;
+    border: 2px solid #00000029;
+    background:  #F7F7F7;
+}
+.box {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    height: 370px;
+
+}
+.box2{
+
+    flex-direction: row-reverse;
+}
+.box3{
+     display: flex;
+     width: 623px;
+     height: 370px;
+     background: #ffff;
+ }
+.box4{
+    width: 440px;
+    height: 370px;
+    background: #55DFB4;
+    margin-left: 60px;
+}
+.benefity>.container>.box:nth-child(3){
+    justify-content: space-between;
+}
+.tekst1{
+    width: 416px;
+    height: 188px;
+    border-bottom: 5px solid red;
+   margin-top: 80px;
+}
+.Mackbook2{
+    height: 270px;
+    margin-left: 169px;
+    margin-right: 112px;
+    margin-top: 50px;
+}
+
+.iphone2{
+    padding-right: 150px;
+}
+.tekst2 {
+    width: 416px;
+    height: 188px;
+    border-bottom: 5px solid #08A6E4 ;
+    margin-top: 80px;
+}
+
+.tekst3 {
+    width: 416px;
+    height: 188px;
+    border-bottom: 5px solid #55DFB4 ;
+    margin-top: 80px;
+}
+
+.trumped{
+    margin: 0 auto;
+    padding: 100px;
+    width: 440px;
+}
+.bacic{
+    border: 2px solid orangered;
+    width: 372px;
+    height: 461px;
+}
+
+.prices{
+    display: flex;
 }
