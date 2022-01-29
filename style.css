@@ -215,12 +215,43 @@ h2{
     padding: 100px;
     width: 440px;
 }
-.bacic{
-    border: 2px solid orangered;
+.basic{
+    display: inline-block;
+    border: 2px solid #FB3B64;
     width: 372px;
     height: 461px;
+    margin-left: 200px;
+    border-radius: 18px;
 }
 
-.prices{
-    display: flex;
+.prices>p{
+    color: black;
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Raleway', normal;
+}
+.rectangle>p{
+    text-align: center;
+margin-top:34px;}
+.rectangle>ul{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    margin-top: 69px;
+    margin-left:50px;
+}
+.rectangle>button{
+      margin-left:110px;
+      margin-top:27px;
+      width:150px;
+      height:50px;
+      background:#EB476E;
+      border-radius: 23px;
+      border: none;
+      color: #F7F7F7;
+  }
+
+.rectangle>ul>li{
+    margin-bottom: 20px;
+
 }
