@@ -2,6 +2,10 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+section{
+    width: 100%;
+}
 .container{
     max-width: 1352px;
     margin: 0 auto;
@@ -69,14 +73,9 @@ a{
     background-size: 2200px;
 }
 h1{
-    display: inline-block;
-    /*font-family: 'Raleway', sans-serif;*/
-    font: normal normal normal 49px/57px Raleway;
-    /*font-size: 49px;*/
-    padding-top: 60px;
-    width: 226px;
-    height: 57px;
-    margin-bottom: 0;
+
+    font:49px/57px Raleway;
+    margin: 60px;
 }
 p{
     font-family: 'Open Sans', sans-serif;
@@ -156,6 +155,7 @@ h2{
 }
 .box {
     display: flex;
+    justify-content: space-between;
     margin-top: 80px;
     margin-bottom: 50px;
     height: 370px;
@@ -164,10 +164,11 @@ h2{
 .box2{
 
     flex-direction: row-reverse;
+    justify-content:space-around ;
 }
 .box3{
      display: flex;
-     width: 623px;
+     width: 800px;
      height: 370px;
      background: #ffff;
  }
@@ -185,13 +186,18 @@ h2{
     height: 188px;
     border-bottom: 5px solid red;
    margin-top: 80px;
+    margin-left: 57px;
 }
-.Mackbook2{
+.Mackbook2 {
+    position: relative;
+    bottom: 215px;
+    right: 219px;
     height: 270px;
-    margin-left: 169px;
-    margin-right: 112px;
-    margin-top: 50px;
 }
+/*    margin-left: 169px;*/
+/*    margin-right: 112px;*/
+/*    margin-top: 50px;*/
+/*}*/
 
 .iphone2{
     padding-right: 150px;
@@ -201,6 +207,7 @@ h2{
     height: 188px;
     border-bottom: 5px solid #08A6E4 ;
     margin-top: 80px;
+    /*margin-left: 55px;*/
 }
 
 .tekst3 {
@@ -208,6 +215,7 @@ h2{
     height: 188px;
     border-bottom: 5px solid #55DFB4 ;
     margin-top: 80px;
+    margin-left: 57px;
 }
 
 .trumped{
@@ -215,29 +223,47 @@ h2{
     padding: 100px;
     width: 440px;
 }
-.basic{
-    display: inline-block;
-    border: 2px solid #FB3B64;
-    width: 372px;
-    height: 461px;
-    margin-left: 200px;
-    border-radius: 18px;
-}
 
+
+.basic{
+    width: 1300px;
+    margin: 0 auto;
+
+}
+.basic>p{
+    font: normal normal bold 21px/1px Raleway;
+    font-weight: bold;
+}
+.prices {
+    width: 1800px;
+    margin: 0 auto;
+    position: center;
+}
 .prices>p{
     color: black;
     font-size: 32px;
     text-align: center;
     font-family: 'Raleway', normal;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.rectangle{
+    border: 1px solid #EB476E;
+    border-radius: 18px;
+    width: 372px;
+    height: 461px;
+    margin-bottom: 200px;
 }
 .rectangle>p{
     text-align: center;
-margin-top:34px;}
+margin-top:34px;
+}
 .rectangle>ul{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     list-style: none;
-    margin-top: 69px;
+    margin-top: 36px;
     margin-left:50px;
 }
 .rectangle>button{
@@ -249,9 +275,189 @@ margin-top:34px;}
       border-radius: 23px;
       border: none;
       color: #F7F7F7;
+    margin-bottom: -20px;
   }
 
 .rectangle>ul>li{
     margin-bottom: 20px;
 
+}
+
+.rectangle>p:nth-child(2){
+    color: #EB476E;
+    font-size: 46px;
+}
+.rectangle2{
+    border: 1px solid #07ACE6;
+    border-radius: 18px;
+    transform: scale(1.1);
+}
+.rectangle2>p{
+    text-align: center;
+    margin-top:34px;
+}
+
+.rectangle2>ul{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    margin-top: 36px;
+    margin-left:50px;
+}
+.rectangle2>button{
+    margin-left:110px;
+    margin-top:27px;
+    width:150px;
+    height:50px;
+    background:#07ACE6;
+    border-radius: 23px;
+    border: none;
+    color: #F7F7F7;
+    margin-bottom: -20px;
+}
+.rectangle2>ul>li {
+    margin-bottom: 20px;
+}
+.rectangle2>p:nth-child(2){
+    color: #07ACE6;
+    font-size: 46px;
+}
+.rectangle3 {
+    border: 1px solid #55DFB4;
+    border-radius: 18px;
+}
+.rectangle3>p {
+    text-align: center;
+    margin-top: 34px;
+}
+.rectangle3>ul{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    margin-top: 36px;
+    margin-left:50px;
+}
+/*.rectangle3>ul>li::before{*/
+/*    content:" ";*/
+/*    background:url("../bestshop/images/Checkmark-1.svg");*/
+/*    width: 5px;*/
+/*    height: 5px;*/
+/*    display: block;*/
+/*}*/
+.rectangle3>button{
+    margin-left:110px;
+    margin-top:27px;
+    width:150px;
+    height:50px;
+    background:#55DFB4;
+    border-radius: 23px;
+    border: none;
+    color: #F7F7F7;
+    margin-bottom: -20px;
+}
+
+.rectangle3>ul>li {
+    margin-bottom: 20px;
+}
+.rectangle3>p:nth-child(2){
+    color: #55DFB4;
+    font-size: 46px;
+}
+form{
+    width: 440px;
+    height: 372px;
+}
+.form-text>input, .form-text>label{
+    display: block;
+}
+.form-text>label{
+    color: #07ACE6;
+    font: normal normal bold 11px/15px Open Sans;
+    text-transform: uppercase;
+}
+.form-text>input{
+    width: 100%;
+}
+input::-moz-focus-inner {
+    border:0;
+    padding:0;
+}
+.paragraf{
+    color: #707070;
+    margin-top: 20px;
+}
+.input-button{
+    width: 226px;
+    height: 57px;
+    font: normal normal bold 13px/18px Open Sans;
+    color: #F7F7F7;
+    background: #08A6E4;
+    border-radius: 35px;
+    border: none;
+    margin-left: 220px;
+    margin-top: 50px;
+}
+.form-text>p{
+    font-size: 34px;
+}
+.kolko{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: #07ACE6;
+    margin-top: 20px;
+}
+
+.kwadrat{
+    width: 220px;
+    height: 220px;
+    border-radius: 41px;
+    background: #EB476E;
+    /*transform: rotate(45deg);*/
+}
+footer{
+    display: inline-block;
+    height: 89px;
+    width: 100%;
+    background: #F7F7F7;
+}
+.imgs>img{
+    margin-right: 15px;
+}
+.imgs{
+    margin-left: 1800px;
+    position: center;
+    margin-top: 30px;
+}
+.footersp{
+    margin-top: -40px;
+    margin-left: 100px;
+}
+.footersp>p{
+    color: #08A6E4;
+    font-size: 24px;
+}
+.footersp>p+p{
+    color: #A5A5A5;
+    font-size: 11px;
+}
+.questions>p{
+    font: normal normal normal 49px/57px Raleway;
+    /*font-size: 50px;*/
+}
+.questions>p+p{
+    font-size: 16px;
+}
+.form-text>input{
+    margin-bottom: 30px;
+}
+.sqer{
+    transform: rotate(45deg);
+}
+.squer-margin{
+    margin-top: 50px;
+}
+.numbers{
+    color: #A5A5A5;
+    font-size: 16px;
 }
