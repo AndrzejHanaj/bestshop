@@ -1,0 +1,126 @@
+@media (max-width: 375px) {
+    li.nav__element {
+        padding: 10px;
+    }
+    .statistics__container {
+        display: block;
+        margin: 125px;
+    }
+    .btn--large {
+        padding: 27px 93px;
+    }
+    .pricing__box{
+        width: 300px;
+        margin-bottom: 3rem;
+    }
+    .pricing__box .pricing__box--professional {
+        width: 330px;
+        margin-bottom: 3rem;
+    }
+    .pricing__boxes {
+        flex-direction: column;
+        div.pricing__box.pricing__box--professional {
+            width: 330px;
+        }
+        div {
+            // margin: 1rem;
+            // display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+
+            .pricing__details {
+                flex: 1 0 40%;
+                // margin: 0;
+            }
+            .pricing__items {
+                flex: 2 0 50%
+            }
+        }
+        .btn {
+            // flex: 1 0 40%;
+            order: -1;
+            margin: 0 70px;
+        }
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .navbar { 
+        .nav-container {
+            display: block;
+            position: relative;
+            height: 60px;
+          }
+        .menu-items {
+        box-shadow: 0 3px 6px rgba(0,0,0,.16);
+            display: none;
+            background-color: white;
+            // transform: translateY(-150%);
+    }
+      }
+       
+   .nav-container  input[type="checkbox"]:checked {
+       
+        
+    & ~  {
+            // display: block;
+            height: 26px;
+            width: 32px;
+            position: absolute;
+            top: 17px;
+            right: 20px;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            
+
+      }
+    & ~ .menu-items {
+        display: block;
+        width: 100%;
+        transform: translateY(22%);
+        transition: transform 0.5s ease-in;
+        li {
+            display: block;
+        }
+    }
+      ~ .navbar .menu-items {
+      
+        display: block;
+    
+        transition: transform 0.5s ease-in-out;
+      
+    }
+    }
+
+    }
+  @media only screen and (min-width: 900px) {
+
+     
+       
+    .nav-container input[type="checkbox"] {
+        ~ .navbar {
+            height: 70px;
+        }
+        ~ .menu-items {
+            // transform: translateY(0);
+            display: flex;
+            height: 30px;
+            width: 100%;
+            justify-content: flex-end;
+            // transition: transform 0.5s ease-in;
+            
+            // li{
+            //     // display: inline-block;
+            // }
+      }
+        ~ .hamburger-lines {
+        display: none;
+      }
+    }
+
+        
+    }
